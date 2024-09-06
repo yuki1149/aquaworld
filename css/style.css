@@ -227,7 +227,7 @@ main {
             }
 
             li:last-child {
-                background-image: url(/img/特別イベント.jpg);
+                background-image: url(../img/特別イベント.jpg);
                 background-size: 100%;
             }
         }
