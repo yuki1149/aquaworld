@@ -135,7 +135,7 @@ main {
     }
 
     .about {
-        background-image: url(/img/水族館について、展示情報の背景.jpg);
+        background-image: url(../img/水族館について、展示情報の背景.jpg);
         object-fit: cover;
         background-size: 100%;
         padding: 50px 100px;
@@ -184,7 +184,7 @@ main {
     }
 
     .enjoy {
-        background-image: url(/img/楽しみ方背景.jpg);
+        background-image: url(../img/楽しみ方背景.jpg);
         background-size: 100%;
         object-fit: cover;
         padding: 50px 100px;
@@ -217,12 +217,12 @@ main {
             }
 
             li:first-child {
-                background-image: url(/img/インタラクティブ展示.webp);
+                background-image: url(../img/インタラクティブ展示.webp);
                 background-size: 100%;
             }
 
             li:nth-child(2) {
-                background-image: url(/img/ガイドツアー.jpg);
+                background-image: url(../img/ガイドツアー.jpg);
                 background-size: 100%;
             }
 
@@ -234,7 +234,7 @@ main {
     }
 
     .display {
-        background-image: url(/img/水族館について、展示情報の背景.jpg);
+        background-image: url(../img/水族館について、展示情報の背景.jpg);
         background-size: 100%;
         object-fit: cover;
         padding: 50px 100px;
@@ -274,7 +274,7 @@ main {
     }
 
     .ticket {
-        background-image: url(/img/料金・チケット背景.jpg);
+        background-image: url(../img/料金・チケット背景.jpg);
         background-size: 100%;
         object-fit: cover;
         padding: 50px 100px;
@@ -311,7 +311,7 @@ main {
     }
 
     .access {
-        background-image: url(/img/アクセス背景.jpg);
+        background-image: url(../img/アクセス背景.jpg);
         background-size: 100%;
         object-fit: cover;
         padding: 50px 100px;
