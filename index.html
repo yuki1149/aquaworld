@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/headerロゴ.png">
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -19,22 +23,45 @@
     <header>
         <h1><a href=""><img src="img/headerロゴ.png" alt=""></a></h1>
         <ul class="header__list">
-            <li><a href=""><img src="img/header水族館について.png" alt="">水族館について</a></li>
-            <li><a href=""><img src="img/header楽しみ方.png" alt="">楽しみ方・イベント</a></li>
-            <li><a href=""><img src="img/header展示情報.png" alt="">展示情報</a></li>
-            <li><a href=""><img src="img/header料金チケット.png" alt="">料金・チケット</a></li>
-            <li><a href=""><img src="img/headerアクセス.png" alt="">アクセス</a></li>
+            <li><a href="#about">水族館について</a></li>
+            <li><a href="#enjoy">楽しみ方・イベント</a></li>
+            <li><a href="#display">展示情報</a></li>
+            <li><a href="#ticket">料金・チケット</a></li>
+            <li><a href="#access">アクセス</a></li>
         </ul>
         <ul class="header__sns">
-            <li><a href=""><img src="img/instagram.png" alt=""></a></li>
-            <li><a href=""><img src="img/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="img/youtube.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="https://x.com/" target="_blank"><img src="img/twitter.png" alt=""></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt=""></a></li>
         </ul>
+        <div class="humberger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu">
+            <ul class="menu__list">
+                <li><a href="#about">水族館について</a></li>
+                <li><a href="#enjoy">楽しみ方・イベント</a></li>
+                <li><a href="#display">展示情報</a></li>
+                <li><a href="#ticket">料金・チケット</a></li>
+                <li><a href="#access">アクセス</a></li>
+            </ul>
+            <ul class="menu__sns">
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="img/twitter.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt=""></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div class="mainvisual">
-            <video src="video/mainvisual1.mp4" loop autoplay muted playsinline></video>
+            <div class="slider">
+                <li><video src="video/mainvisual1.mp4" loop autoplay muted playsinline></video></li>
+                <li><video src="video/mainvisual2.mp4" loop autoplay muted playsinline></video></li>
+                <li><video src="video/mainvisual3.mp4" loop autoplay muted playsinline></video></li>
+            </div>
             <div class="title">
                 <h2>WELCOME<br>TO<br>AQUAWORLD</h2>
             </div>
@@ -44,12 +71,12 @@
             </div>
         </div>
 
-        <section class="about">
-            <h3>ー　水族館について　ー</h3>
+        <section id="about" class="about">
+            <h3>水族館について</h3>
             <div class="about__box">
                 <div class="about__box--left">
                     <p>アクアワールドへようこそ！</p>
-                    <p>アクアワールドは、海の神秘と美しさを体験できる場所です。<br>多彩な海洋生物たちが暮らすこの水族館では、訪れるすべての人々に感動と学びを提供します。家族連れやカップル、友人同士での訪問に最適なスポットです。さあ、海の世界を一緒に探検しましょう！
+                    <p>アクアワールドは、海の神秘と美しさを体験できる場所です。<br>多彩な海洋生物たちが暮らすこの水族館では、訪れるすべての人々に感動と学びを提供します。<br>家族連れやカップル、友人同士での訪問に最適なスポットです。さあ、海の世界を一緒に探検しましょう！
                     </p>
                     <a href="">館内情報</a>
                 </div>
@@ -59,17 +86,23 @@
             </div>
         </section>
 
-        <section class="enjoy">
-            <h3>ー　楽しみ方・イベント　ー</h3>
+        <section id="enjoy" class="enjoy">
+            <h3>楽しみ方・イベント</h3>
             <ul class="enjoy__box">
-                <li><a href="">インタラクティブ展示</a></li>
-                <li><a href="">ガイドツアー</a></li>
-                <li><a href="">特別イベント</a></li>
+                <li><a href=""><img src="img/インタラクティブ展示.webp" alt="">
+                        <p>インタラクティブ展示</p>
+                    </a></li>
+                <li><a href=""><img src="img/ガイドツアー.jpg" alt="">
+                        <p>ガイドツアー</p>
+                    </a></li>
+                <li><a href=""><img src="img/特別イベント.jpg" alt="">
+                        <p>特別イベント</p>
+                    </a></li>
             </ul>
         </section>
 
-        <section class="display">
-            <h3>ー　展示情報　ー</h3>
+        <section id="display" class="display">
+            <h3>展示情報</h3>
             <ul class="display__img">
                 <li><img src="img/イルカ.jpg" alt=""></li>
                 <li><img src="img/ジンベイザメ.jpg" alt=""></li>
@@ -80,8 +113,8 @@
             <a href="">フロアマップ</a>
         </section>
 
-        <section class="ticket">
-            <h3>ー　料金・チケット　ー</h3>
+        <section id="ticket" class="ticket">
+            <h3>料金・チケット</h3>
             <div class="ticket__box">
                 <div class="ticket__box--left">
                     <p>料金<br>
@@ -97,21 +130,25 @@
             </div>
         </section>
 
-        <section class="access">
-            <h3>ー　アクセス　ー</h3>
+        <section id="access" class="access">
+            <h3>アクセス</h3>
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6562.404851395864!2d135.18134146928787!3d34.674840220273445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008fabbe2a76f9%3A0x566cbb400bf02bf2!2z44CSNjUwLTAwNDQg5YW15bqr55yM56We5oi45biC5Lit5aSu5Yy65p2x5bed5bSO55S6!5e0!3m2!1sja!2sjp!4v1725508149497!5m2!1sja!2sjp"
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div access__btn>
-                <div class="access__btn--left">
-                    <a href="">電車・バス</a>
-                </div>
-                <div class="access__btn--right">
-                    <a href="">車・駐車場</a>
-                </div>
+            <div class="access__btn">
+                <a href="" class="access__btn--left">
+                    <img src="img/アクセス電車.png" alt="">
+                    電車・バス
+                    <img src="img/アクセス車電車矢印.png" alt="">
+                </a>
+                <a href="" class="access__btn--right">
+                    <img src="img/アクセス車.png" alt="">
+                    車・駐車場
+                    <img src="img/アクセス車電車矢印.png" alt="">
+                </a>
             </div>
         </section>
     </main>
@@ -119,19 +156,19 @@
     <footer>
         <div class="footer__box">
             <div class="logo">
-                <img src="img/Saved Pictures/headerロゴ.png" alt="">
+                <a href=""><img src="img/headerロゴ.png" alt=""></a>
             </div>
             <ul class="footer__list">
-                <li><a href="">水族館について</a></li>
-                <li><a href="">楽しみ方・イベント</a></li>
-                <li><a href="">展示情報</a></li>
-                <li><a href="">料金・チケット</a></li>
-                <li><a href="">アクセス</a></li>
+                <li><a href="#about">水族館について</a></li>
+                <li><a href="#enjoy">楽しみ方・イベント</a></li>
+                <li><a href="#display">展示情報</a></li>
+                <li><a href="#ticket">料金・チケット</a></li>
+                <li><a href="#access">アクセス</a></li>
             </ul>
             <ul class="footer__sns">
-                <li><a href=""><img src="img/Saved Pictures/instagram.png" alt=""></a></li>
-                <li><a href=""><img src="img/Saved Pictures/twitter.png" alt=""></a></li>
-                <li><a href=""><img src="img/Saved Pictures/youtube.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
+                <li><a href="https://x.com/" target="_blank"><img src="img/twitter.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="img/youtube.png" alt=""></a></li>
             </ul>
         </div>
         <p>© AQUAWORLD.</p>
