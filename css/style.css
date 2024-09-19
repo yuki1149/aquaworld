@@ -377,11 +377,17 @@ main {
                     text-decoration: none;
                     display: block;
                     width: 100%;
+                    overflow: hidden;
 
                     img {
                         width: 100%;
                         object-fit: cover;
                         vertical-align: bottom;
+                        transition: 0.8s;
+                    }
+                    img:hover{
+                        transform: scale(1.2,1.2);
+                        transition: 0.8s;
                     }
 
                     p {
